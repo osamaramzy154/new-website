@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لقطات من شغلنا | الالمانية المتحدة</title>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 4px #000;
+
+  background: 
+    linear-gradient(-45deg, rgba(255,154,158,0.6), rgba(250,208,196,0.6), rgba(161,140,209,0.6), rgba(251,194,235,0.6)), 
+    url("background.jpg") no-repeat center center;
+    
+  background-size: 400% 400%, cover;
+  background-attachment: scroll;  
+  min-height: 100vh;
+
+  animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%, center; }
+  50% { background-position: 100% 50%, center; }
+  100% { background-position: 0% 50%, center; }
+}
+
+    h1 {
+      margin: 20px 0;
+      font-size: 24px;
+      color: #ffcc00;
+    }
+
+    .videos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    video {
+      width: 45%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    }
+
+    a.back-btn {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 18px;
+      background: #ffcc00;
+      color: black;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    a.back-btn:hover {
+      background: #ffaa00;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎥 لقطات من شغلنا</h1>
+
+  <div class="videos">
+    <video autoplay muted loop playsinline>
+      <source src="company1.mp4" type="video/mp4">
+      متصفحك لا يدعم تشغيل الفيديو.
+    </video>
+
+    <video autoplay muted loop playsinline>
+      <source src="company2.mp4" type="video/mp4">
+      متصفحك لا يدعم تشغيل الفيديو.
+    </video>
+  </div>
+
+  <a href="index.html" class="back-btn">⬅ الرجوع للصفحة الرئيسية</a>
+
+</body>
+</html>
