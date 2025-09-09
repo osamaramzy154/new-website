@@ -192,62 +192,63 @@
     font-size: 9px;         /* نص "انقر للمشاهدة" أصغر */
   }
 }
-  /* نسخة اللابتوب */
-  @media (min-width: 769px) {
-   @media (min-width: 769px) {
+@media (min-width: 769px) {
+  /* خلي الخلفية الأساسية هي اللي تبان */
   body {
     background: url("background.jpg") no-repeat center center;
     background-size: cover;
-    background-attachment: fixed; /* يخلي الصورة ثابتة */
+    background-attachment: fixed;
   }
 
+  /* اخفي صورة الموبايل من اللابتوب */
   .mobile-bg {
-    display: none; /* نشيل صورة الموبايل من اللابتوب */
+    display: none !important;
   }
 
+  /* كبر العناوين */
   header h1 {
-    font-size: 40px;   /* العنوان الرئيسي أكبر */
-    color: #000;
+    font-size: 48px !important;
     font-weight: bold;
+    color: #000 !important;
   }
 
   header h2 {
-    font-size: 20px;   /* العنوان الفرعي أكبر */
-    color: #000;
+    font-size: 26px !important;
+    color: #000 !important;
   }
 
   .guarantee {
-    margin-top: 10px;
-    font-size: 22px;
+    font-size: 24px !important;
     font-weight: bold;
-    color: red;
+    color: red !important;
+    margin-top: 15px;
   }
 
+  /* كبر الأزرار والأيقونات */
   .icons a {
-    font-size: 16px;
-    padding: 10px 15px;
+    font-size: 18px !important;
+    padding: 12px 20px !important;
   }
 
   .icons img {
-    width: 28px;
-    height: 28px;
+    width: 32px !important;
+    height: 32px !important;
   }
 
   .work-btn {
-    padding: 14px 20px;
-    font-size: 20px;
+    padding: 16px 24px !important;
+    font-size: 22px !important;
   }
 
   .work-btn img {
-    width: 32px;
-    height: 32px;
+    width: 36px !important;
+    height: 36px !important;
   }
 
   .watch-text {
-    font-size: 14px;
+    font-size: 16px !important;
   }
 }
-  }
 
   /* نسخة الموبايل - الهيدر والعناوين */
   @media (max-width: 768px) {
