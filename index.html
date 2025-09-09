@@ -194,7 +194,59 @@
 }
   /* نسخة اللابتوب */
   @media (min-width: 769px) {
-    /* ... كود اللابتوب ... */
+   @media (min-width: 769px) {
+  body {
+    background: url("background.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* يخلي الصورة ثابتة */
+  }
+
+  .mobile-bg {
+    display: none; /* نشيل صورة الموبايل من اللابتوب */
+  }
+
+  header h1 {
+    font-size: 40px;   /* العنوان الرئيسي أكبر */
+    color: #000;
+    font-weight: bold;
+  }
+
+  header h2 {
+    font-size: 20px;   /* العنوان الفرعي أكبر */
+    color: #000;
+  }
+
+  .guarantee {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: red;
+  }
+
+  .icons a {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .icons img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .work-btn {
+    padding: 14px 20px;
+    font-size: 20px;
+  }
+
+  .work-btn img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .watch-text {
+    font-size: 14px;
+  }
+}
   }
 
   /* نسخة الموبايل - الهيدر والعناوين */
